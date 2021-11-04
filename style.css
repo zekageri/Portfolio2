@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.stickyNav{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.842);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: 0.5s;
+}
+
+.stickyNav.open{
+    height: 230px;
+    padding: 0px;
+    background-color: #ffffffdb;
+}
+
+.navButtons a{
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(37, 45, 56);
+    margin: 0 10px;
+}
+
+.navButtons.open{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navButtons a.active{
+    border-bottom:1px solid rgb(252, 153, 168);
+    padding-bottom:2px;
+}
+
+.navButtons a:hover{
+    border-bottom:1px solid rgb(252, 153, 168);
+    padding-bottom:2px;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightslategray;
+    scroll-snap-align: center;
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 600px) {
+    .mobileNavBtn{
+        cursor: pointer;
+        display: inline-block !important;
+        font-size: x-large;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        margin-right: 15px;
+    }
+    .navButtons{
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 2px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 10px;
+}
