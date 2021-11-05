@@ -2,6 +2,7 @@ $(document).ready(function () {
     navBarInit();
     checkScrollPosition();
     initMobileNavEvent();
+    initContacts();
 });
 
 
@@ -38,6 +39,12 @@ function checkScrollPosition(){
     });
 }
 
+// Contact msg send button capture
+function contactSendBtn_Event(){
+    $(".sendContactMsg").on("click", function () {
+        $(".contactForm").trigger("submit");
+    });
+}
 
 // Check if an element is in viewport. Returns true if it is.
 $.fn.isInViewport = function() {

@@ -1,0 +1,64 @@
+.introductionSection{
+    justify-content: center;
+    align-items: center;
+}
+
+.introductionsWrapper{
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 50px;
+}
+
+.introBox{
+    border: 1px solid rgba(128, 128, 128, 0.61);
+    text-align: center;
+    padding: 10px;
+    overflow: overlay;
+    line-height: 1.7em;
+}
+
+.introBoxBody{
+    padding-top: 10px;
+}
+
+.hshLink{
+    text-decoration: none;
+    color: hotpink;
+}
+
+.myBackground {
+    grid-column: 4 / 2;
+    grid-row: 3 / 5;
+}
+.skills {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+.myGoals {
+    grid-column: 1;
+    grid-row: 1 / 5;
+}
+
+@media only screen and (max-width: 600px) {
+    .introductionsWrapper{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 45px 5px;
+    }
+    .myBackground {
+        grid-column: 1 / 4;
+        grid-row: 3;
+    }
+    .skills {
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
+    .myGoals {
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+}

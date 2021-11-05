@@ -1,0 +1,8 @@
+.mainSection{
+    flex-flow: column;
+    gap: 10px;
+}
+
+.mainSection .welcomeParagraph{
+    text-align: center;
+}
