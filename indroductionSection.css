@@ -17,13 +17,24 @@
 .introBox{
     border: 1px solid rgba(128, 128, 128, 0.61);
     text-align: center;
-    padding: 10px;
+    /*padding: 0px 10px 5px;*/
     overflow: overlay;
     line-height: 1.7em;
 }
 
+.introBoxHeader {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 30px;
+    left: 0px;
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    line-height: 30px;
+}
+
 .introBoxBody{
-    padding-top: 10px;
+    padding: 15px 10px;
 }
 
 .hshLink{
