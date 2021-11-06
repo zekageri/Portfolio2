@@ -1,6 +1,6 @@
 {
-    "scope": "./index.html",
-    "start_url": "./index.html",
+    "scope": "index.html",
+    "start_url": "index.html",
     "name": "Portfolio",
     "short_name": "Portfolio",
     "icons": [
