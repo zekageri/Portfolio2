@@ -1,0 +1,22 @@
+{
+    "scope": "./index.html",
+    "start_url": "./index.html",
+    "name": "hshApp",
+    "short_name": "hshApp",
+    "icons": [
+        {
+            "src": "Portfolioico.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "Portfolioico.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffffdb",
+    "background_color": "#ffffffdb",
+    "display": "standalone",
+    "orientation": "portrait"
+}
