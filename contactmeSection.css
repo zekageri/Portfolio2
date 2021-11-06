@@ -99,6 +99,9 @@ input.emptyInput{
     .contactSection{
         padding: 0px;
     }
+    .contactMeBox{
+        width: 90%;
+    }
     .contactBoxBody{
         grid-template-columns: repeat(1, 1fr);
     }
