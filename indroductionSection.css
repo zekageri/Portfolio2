@@ -58,7 +58,7 @@
 @media only screen and (max-width: 600px) {
     .introductionsWrapper{
         grid-template-columns: repeat(1, 1fr);
-        padding: 45px 5px 5px;
+        padding: 45px 5px 20px;
     }
     .myBackground {
         grid-column: 1 / 4;
