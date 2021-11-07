@@ -3,7 +3,7 @@ $(document).ready(function () {
     checkScrollPosition();
     initMobileNavEvent();
     initContacts();
-    getIcons();
+    insertIcons();
     projectDescription_Event();
 });
 
