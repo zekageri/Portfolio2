@@ -10,6 +10,7 @@ $(document).ready(function () {
     });
 });
 
+// Array of images that are on the screen
 var imagesToPreload = ["images/hshPic.png", "images/komakDrive.png", "images/moodLamp.jpg", "images/pusherGame.png"];
 
 // Init mobile navigation button
@@ -77,21 +78,21 @@ $.fn.isInViewport = function() {
     return elementBottom > viewportTop && elementTop < viewportBottom;
 };
 
+// Preload array of images and returns with callback
 function preloadImages(urls, allImagesLoadedCallback){
     var loadedCounter = 0;
-  var toBeLoadedNumber = urls.length;
-  urls.forEach(function(url){
-    preloadImage(url, function(){
-        loadedCounter++;
-            console.log('Number of loaded images: ' + loadedCounter);
-      if(loadedCounter == toBeLoadedNumber){
-        allImagesLoadedCallback();
-      }
+    var toBeLoadedNumber = urls.length;
+        urls.forEach(function(url){
+            preloadImage(url, function(){
+                loadedCounter++;
+            if(loadedCounter == toBeLoadedNumber){
+                allImagesLoadedCallback();
+            }
+        });
     });
-  });
-  function preloadImage(url, anImageLoadedCallback){
-      var img = new Image();
-      img.onload = anImageLoadedCallback;
-      img.src = url;
-  }
+    function preloadImage(url, anImageLoadedCallback){
+        var img = new Image();
+        img.onload = anImageLoadedCallback;
+        img.src = url;
+    }
 }

@@ -10,6 +10,7 @@ function insertIcons(){
     }
 }
 
+// I could not fetch my icon array because of github pages. So i had to create a json file with all the icons.
 var icons = {
     "hsh-arrow-left": {
         "keyWords": {
