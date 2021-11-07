@@ -86,17 +86,29 @@ section{
 .btn{
     all: unset;
     cursor: pointer;
-    min-width: 50px;
-    width: 80px;
+    min-width: 30px;
     height: 30px;
     border: 1px solid gray;
     text-align: center;
     line-height: 30px;
     border-radius: 0.3rem;
+    padding: 2px;
 }
 
 .btn:hover i{
     color: lightskyblue;
+}
+
+.githubLink svg{
+    fill: #ffffff;
+    color: black;
+    position: absolute;
+    top: 0;
+    border: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    transform: rotate(270deg);
 }
 
 ::-webkit-scrollbar {

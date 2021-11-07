@@ -1,0 +1,70 @@
+i.hsh {
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-weight: 900;
+    vertical-align: -30% !important;
+    margin: 2px;
+}
+
+i.hsh svg{
+    height: 1em;
+    width: 1em;
+}
+
+i.hsh.hsh-xs svg{
+    width: .500em !important;
+    height: .500em !important;
+}
+i.hsh.hsh-sm svg{
+    width: .875em !important;
+    height: .875em !important;
+}
+i.hsh.hsh-m svg{
+    width: 1.5em !important;
+    height: 1.5em !important;
+}
+i.hsh.hsh-lg svg{
+    width: 1.8em !important;
+    height: 1.8em !important;
+}
+
+i.hsh.hsh-2x svg{
+    width: 2em !important;
+    height: 2em !important;
+}
+i.hsh.hsh-3x svg{
+    width: 3em !important;
+    height: 3em !important;
+}
+i.hsh.hsh-4x svg{
+    width: 4em !important;
+    height: 4em !important;
+}
+i.hsh.hsh-5x svg{
+    width: 5em !important;
+    height: 5em !important;
+}
+i.hsh.hsh-6x svg{
+    width: 6em !important;
+    height: 6em !important;
+}
+i.hsh.hsh-7x svg{
+    width: 7em !important;
+    height: 7em !important;
+}
+i.hsh.hsh-8x svg{
+    width: 8em !important;
+    height: 8em !important;
+}
+i.hsh.hsh-9x svg{
+    width: 9em !important;
+    height: 9em !important;
+}
+i.hsh.hsh-10x svg{
+    width: 10em !important;
+    height: 10em !important;
+}

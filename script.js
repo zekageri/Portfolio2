@@ -3,6 +3,8 @@ $(document).ready(function () {
     checkScrollPosition();
     initMobileNavEvent();
     initContacts();
+    getIcons();
+    projectDescription_Event();
 });
 
 
@@ -43,6 +45,22 @@ function checkScrollPosition(){
 function contactSendBtn_Event(){
     $(".sendContactMsg").on("click", function () {
         $(".contactForm").trigger("submit");
+    });
+}
+
+// Reveal project description
+function projectDescription_Event(){
+    $(".arrowUpBtn").on("click", function () {
+        $(this).closest(".projectCardBody").toggleClass("open");
+        if( $(this).closest(".projectCardBody").hasClass("open") ){
+            setTimeout(() => {
+                $(this).find("i").html(`${icons["hsh-arrow-down"].svg}`);
+            }, 300);
+        }else{
+            setTimeout(() => {
+                $(this).find("i").html(`${icons["hsh-arrow-up"].svg}`);
+            }, 300);
+        }
     });
 }
 

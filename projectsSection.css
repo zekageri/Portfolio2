@@ -1,0 +1,104 @@
+.projectsSection{
+    padding: 50px 10px;
+}
+.projectCardContainer{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    align-items: center;
+    gap: 10px;
+    row-gap: 5px;
+    overflow: overlay;
+}
+
+@media only screen and (max-width: 600px) {
+    .projectCardContainer{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .projectCardContainer{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+.projectCardWrapper{
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.projectCardHeader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.projectCardBody {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid gray;
+    height: 50px;
+    padding: 0px 5px;
+    line-height: 50px;
+    background-color: #ffffff;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.projectCardBody.open{
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
+}
+
+.projectCardHeader:hover img{
+    transform: scale(1.5);
+}
+
+.projectHeaderimage {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.5s;
+}
+
+.projectDescription {
+    line-height: 25px;
+    border-top: 1px solid;
+}
+
+.hshFeaturesHeader{
+    text-align: center;
+}
+.bodyItem{
+    display: inline-block;
+}
+
+.projectButtonWrapper{
+    float: right;
+}
+
+.projectCardWrapper:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
