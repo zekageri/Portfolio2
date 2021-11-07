@@ -1,4 +1,4 @@
-My personal Portfolio. Currently in development.
+My minimalistic personal Portfolio. Currently in development.
 
 Home page
 
