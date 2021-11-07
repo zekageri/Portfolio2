@@ -5,8 +5,12 @@ $(document).ready(function () {
     initContacts();
     insertIcons();
     projectDescription_Event();
+    preloadImages(imagesToPreload, function(){
+        console.log('All images were loaded');
+    });
 });
 
+var imagesToPreload = ["images/hshPic.png", "images/komakDrive.png", "images/moodLamp.jpg", "images/pusherGame.png"];
 
 // Init mobile navigation button
 function initMobileNavEvent(){
@@ -72,3 +76,22 @@ $.fn.isInViewport = function() {
     var viewportBottom = viewportTop + $(window).height();
     return elementBottom > viewportTop && elementTop < viewportBottom;
 };
+
+function preloadImages(urls, allImagesLoadedCallback){
+    var loadedCounter = 0;
+  var toBeLoadedNumber = urls.length;
+  urls.forEach(function(url){
+    preloadImage(url, function(){
+        loadedCounter++;
+            console.log('Number of loaded images: ' + loadedCounter);
+      if(loadedCounter == toBeLoadedNumber){
+        allImagesLoadedCallback();
+      }
+    });
+  });
+  function preloadImage(url, anImageLoadedCallback){
+      var img = new Image();
+      img.onload = anImageLoadedCallback;
+      img.src = url;
+  }
+}
