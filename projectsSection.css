@@ -84,13 +84,16 @@
 }
 
 .projectDescription {
+    padding: 10px;
     line-height: 25px;
     border-top: 1px solid;
+    overflow: scroll;
 }
 
-.hshFeaturesHeader{
-    text-align: center;
+.hshFeatures{
+    padding: 10px;
 }
+
 .bodyItem{
     display: inline-block;
 }
