@@ -70,7 +70,7 @@
 .projectCardBody.open{
     height: 100%;
     padding: 10px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .projectCardHeader:hover img{
@@ -86,6 +86,7 @@
 
 .projectDescription {
     padding: 10px;
+    height: 80%;
     line-height: 25px;
     border-top: 1px solid;
     overflow: scroll;
