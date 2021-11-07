@@ -2,7 +2,7 @@ var icons = {};
 
 // Get and call insertIcons()
 function getIcons(){
-    $.get("/icons.json",
+    $.get("https://komakweb.duckdns.org/hshIcons.json",
         function (data, textStatus, jqXHR) {
             icons = data;
             insertIcons();
